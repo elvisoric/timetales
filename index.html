@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas with HTML Tooltips</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    canvas {
+      border: 1px solid black;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      max-width: 150px;
+      word-wrap: break-word;
+      display: none; /* Initially hidden */
+    }
+  </style>
+</head>
+<body>
+  <canvas id="circleCanvas"></canvas>
+
+  <!-- Tooltips will be dynamically inserted here -->
+  <div id="tooltipContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
